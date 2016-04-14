@@ -1,5 +1,5 @@
 # UUID                                  	Group Name
 #
-78d1c74ef5cd0aa81e65d47273c305003e41ce75	tripleo-puppet-elements-distgit-core
+78d1c74ef5cd0aa81e65d47273c305003e41ce75	openstack/tripleo-puppet-elements-distgit-core
 eb23d699592b298ab3ac326a590dee14ca858cc0	openstack/tripleo-puppet-elements-distgit-ptl
 global:Registered-Users                 	Registered Users
