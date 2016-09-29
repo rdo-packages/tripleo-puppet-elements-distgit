@@ -1,4 +1,4 @@
-%global milestone .0rc1
+%global milestone .0rc2
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 # Turn off the brp-python-bytecompile script
 %global __os_install_post %(echo '%{__os_install_post}' | sed -e 's!/usr/lib[^[:space:]]*/brp-python-bytecompile[[:space:]].*$!!g')
@@ -6,14 +6,14 @@
 Name:		openstack-tripleo-puppet-elements
 Summary:	OpenStack TripleO Puppet Elements for diskimage-builder
 Version:    	5.0.0
-Release:    	0.2%{?milestone}%{?dist}
+Release:    	0.3%{?milestone}%{?dist}
 License:	ASL 2.0
 Group:		System Environment/Base
 URL:		https://wiki.openstack.org/wiki/TripleO
 Source0: 	https://tarballs.openstack.org/tripleo-puppet-elements/tripleo-puppet-elements-%{upstream_version}.tar.gz
 
 #
-# patches_base=5.0.0.0rc1
+# patches_base=5.0.0.0rc2
 #
 
 BuildArch:	noarch
@@ -47,6 +47,9 @@ find %{buildroot} -name .git-keep-empty | xargs rm -f
 %{_datadir}/tripleo-puppet-elements
 
 %changelog
+* Thu Sep 29 2016 Haikel Guemar <hguemar@fedoraproject.org> 5.0.0-0.3.0rc2
+- Update to 5.0.0.0rc2
+
 * Thu Sep 22 2016 Alfredo Moralejo <amoralej@redhat.com> 5.0.0-0.2.0rc1
 - Update to 5.0.0.0rc1
 
