@@ -17,6 +17,7 @@ BuildRequires:	python2-devel
 BuildRequires:	python-setuptools
 BuildRequires:	python-d2to1
 BuildRequires:	python-pbr
+Requires: os-refresh-config
 
 %description
 OpenStack TripleO Puppet Elements is a collection of elements for
@@ -34,6 +35,9 @@ Puppet for the TripleO program.
 
 # remove .git-keep-empty files that get installed
 find %{buildroot} -name .git-keep-empty | xargs rm -f
+
+# This hook effectively disables the old hiera element if it is in place
+install -p -D -m 755 elements/hiera/10-hiera-disable %{buildroot}%{_libexecdir}/os-refresh-config/configure.d/10-hiera-disable
 
 %files
 %doc LICENSE
