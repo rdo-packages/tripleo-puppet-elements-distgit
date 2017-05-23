@@ -7,7 +7,7 @@
 
 Name:           openstack-tripleo-puppet-elements
 Summary:        OpenStack TripleO Puppet Elements for diskimage-builder
-Version:        2.0.0
+Version:        3.2.0
 Release:        1%{?dist}
 License:        ASL 2.0
 URL:            https://wiki.openstack.org/wiki/TripleO
@@ -45,5 +45,8 @@ find %{buildroot} -name .git-keep-empty | xargs rm -f
 %{_datadir}/tripleo-puppet-elements
 
 %changelog
+* Tue May 23 2017 Alfredo Moralejo <amoralej@redhat.com> 3.2.0-1
+- Update to 3.2.0
+
 * Wed Mar 30 2016 RDO <rdo-list@redhat.com> 2.0.0-1
 - RC1 Rebuild for Mitaka RC1 
