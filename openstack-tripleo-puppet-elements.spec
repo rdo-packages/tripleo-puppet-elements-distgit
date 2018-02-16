@@ -14,9 +14,9 @@ Source0: 	https://tarballs.openstack.org/tripleo-puppet-elements/tripleo-puppet-
 BuildArch:	noarch
 BuildRequires:	python
 BuildRequires:	python2-devel
-BuildRequires:	python-setuptools
+BuildRequires:	python2-setuptools
 BuildRequires:	python-d2to1
-BuildRequires:	python-pbr
+BuildRequires:	python2-pbr
 
 %description
 OpenStack TripleO Puppet Elements is a collection of elements for
