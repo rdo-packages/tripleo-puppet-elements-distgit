@@ -53,7 +53,6 @@ find %{buildroot} -name .git-keep-empty | xargs rm -f
 
 %files
 %doc LICENSE
-%doc README.md
 %{pyver_sitelib}/tripleo_puppet_elements*
 %{_datadir}/tripleo-puppet-elements
 
