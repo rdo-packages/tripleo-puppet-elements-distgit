@@ -17,8 +17,8 @@
 
 Name:		openstack-tripleo-puppet-elements
 Summary:	OpenStack TripleO Puppet Elements for diskimage-builder
-Version:    	XXX
-Release:    	XXX
+Version:    	10.3.0
+Release:    	1%{?dist}
 License:	ASL 2.0
 Group:		System Environment/Base
 URL:		https://wiki.openstack.org/wiki/TripleO
@@ -58,3 +58,6 @@ find %{buildroot} -name .git-keep-empty | xargs rm -f
 %{_datadir}/tripleo-puppet-elements
 
 %changelog
+* Thu Apr 18 2019 RDO <dev@lists.rdoproject.org> 10.3.0-1
+- Update to 10.3.0
+
