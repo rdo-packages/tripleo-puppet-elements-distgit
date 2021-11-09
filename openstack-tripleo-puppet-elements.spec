@@ -58,3 +58,4 @@ find %{buildroot} -name .git-keep-empty | xargs rm -f
 %{_datadir}/tripleo-puppet-elements
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/tripleo-puppet-elements/commit/dedfa56ce792b66b341a59ccac4d3ef12712188c
