@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x5d2d1e4fb8d38e6af76c50d53d4fec30cf5ce3da
+%global sources_gpg_sign 0xa63ea142678138d1bb15f2e303bdfd64dd164087
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 # Turn off the brp-python-bytecompile script
@@ -7,7 +7,7 @@
 
 Name:		openstack-tripleo-puppet-elements
 Summary:	OpenStack TripleO Puppet Elements for diskimage-builder
-Version:    	13.1.1
+Version:    	13.1.2
 Release:    	1%{?dist}
 License:	ASL 2.0
 Group:		System Environment/Base
@@ -58,6 +58,9 @@ find %{buildroot} -name .git-keep-empty | xargs rm -f
 %{_datadir}/tripleo-puppet-elements
 
 %changelog
+* Thu Apr 21 2022 RDO <dev@lists.rdoproject.org> 13.1.2-1
+- Update to 13.1.2
+
 * Fri Apr 09 2021 RDO <dev@lists.rdoproject.org> 13.1.1-1
 - Update to 13.1.1
 
