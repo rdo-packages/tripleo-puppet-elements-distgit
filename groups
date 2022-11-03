@@ -1,9 +1,9 @@
 # UUID Group Name
 global:Registered-Users	Registered Users
-05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
-04024c8616723c561043769c93cab4d89fc3290b	openstack/tripleo-puppet-elements-ptl
 6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Service Users
-4572c517702492251ad622a289176552a8acbbb2	rdo-superusers
 401cf37bee35d1c809d4d957e55f2a304f8eed69	rdo-provenpackagers
 b01c1dc6f3106770e89eddc12d3d1b8681d68c91	openstack/tripleo-puppet-elements-core
 global:Anonymous-Users	Anonymous Users
+04024c8616723c561043769c93cab4d89fc3290b	openstack/tripleo-puppet-elements-ptl
+4572c517702492251ad622a289176552a8acbbb2	rdo-superusers
+05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
